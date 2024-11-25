@@ -1,0 +1,112 @@
+/* Centrado del cuerpo */
+body {
+   position: absolute;
+   height: 100vh;
+   margin: 0;
+   background-color: #f3f3f3;
+}
+
+/* Contenedor de la cuadrícula */
+.grid {
+   position: relative;
+   top: 20%;
+   right: -130%;
+   display: grid;
+   grid-template-columns: 1fr 1.3fr 1.3fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr 1.6fr 1.6fr 1.3fr 1.3fr;
+   grid-template-areas: 
+   "cuadro1 cuadro2 cuadro3 cuadro4"
+   "cuadro1 cuadro2 cuadro5 cuadro4"
+   "cuadro6 cuadro7 cuadro7 cuadro4"
+   "cuadro8 cuadro9 cuadro9 cuadro10"
+   "cuadro8 cuadro9 cuadro9 cuadro11"
+   "cuadro12 cuadro13 cuadro14 cuadro14"
+   "cuadro15 cuadro15 cuadro14 cuadro14";
+
+   width: 400px;
+   height: 500px;
+   background-color: white;
+   border: 12px solid rgb(232, 232, 196);
+}
+
+/* Cuadros */
+.grid>* {
+
+   border: 6px solid black;
+}
+
+.cuadro1 {
+   background-color: blue;
+   grid-area: cuadro1;
+
+}
+
+.cuadro2 {
+   background-color: rgb(255, 255, 255);
+   grid-area: cuadro2;
+}
+
+.cuadro3 {
+   background-color: rgb(244, 252, 0);
+   grid-area: cuadro3;
+}
+
+.cuadro4 {
+   background-color: white;
+   grid-area: cuadro4;
+}
+
+.cuadro5 {
+   background-color: rgb(255, 255, 255);
+   grid-area: cuadro5;
+}
+
+.cuadro6 {
+   background-color: white;
+   grid-area: cuadro6;
+}
+
+.cuadro7 {
+   background-color: rgb(255, 0, 0);
+   grid-area: cuadro7;
+}
+
+.cuadro8 {
+   background-color: white;
+   grid-area: cuadro8;
+}
+
+.cuadro9 {
+   background-color: white;
+   grid-area: cuadro9;
+}
+
+.cuadro10 {
+   background-color: rgb(38, 0, 255);
+   grid-area: cuadro10;
+}
+
+.cuadro11 {
+   background-color: white;
+   grid-area: cuadro11;
+}
+
+.cuadro12 {
+   background-color: rgb(0, 38, 255);
+   grid-area: cuadro12;
+}
+
+.cuadro13 {
+   background-color: rgb(255, 255, 255);
+   grid-area: cuadro13;
+}
+
+.cuadro14 {
+   background-color: yellow;
+   grid-area: cuadro14;
+}
+
+.cuadro15 {
+   background-color: rgb(255, 255, 255);
+   grid-area: cuadro15;
+}
