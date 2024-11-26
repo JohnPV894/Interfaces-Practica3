@@ -2,15 +2,14 @@
 * {
    margin: 0;
    padding: 0;
+   font-family: sans-serif;
 }
 
 body {
-   font-family: Arial, sans-serif;
-   line-height: 1.5;
    width: 100%;
 }
 
-/* Header */
+/* Cabecera */
 header {
    display: flex;
    justify-content: space-between;
@@ -62,13 +61,15 @@ section p {
 }
 
 section button {
-   background-color: rgb(44, 201, 44);
+   background-color:#26b758;
    color: white;
    padding: 10px 20px;
    border: none;
    border-radius: 17px;
    font-size: 1rem;
    cursor: pointer;
+   font-weight: 600;
+   letter-spacing: 0.2em;
 }
 
 section button:hover {
@@ -142,21 +143,21 @@ footer {
 @media (max-width: 768px){
    /*Cabecera*/
  header{
-   height: 6.5vh;
+   height: 7.0vh;
    padding: 0px;
  }
  .logo{
    display: flex;
    justify-content: center;
    align-items: center;
-   height: 10vh;
+   height: 12vh;
 
  }
  .logo>img{
    margin-left: 0.5em;
    padding: 5px;
-   width: 6em;
-   height: 2.0em;
+   width: 6.5em;
+   height: 2.5em;
 
  }
  nav>a{
@@ -167,7 +168,6 @@ footer {
    display:flex; 
    background-image: url("/flex/img/menu.jpg"); /* Imagen de fondo */
    background-size: contain; /* Escala la imagen */
-
    width: 50px; /* Ancho del pseudo-elemento */
    height: 6vh;
    
@@ -177,23 +177,80 @@ footer {
  }
  /*Cuerpo 1*/
  section{
-   height: 80.8vh;
-   width: 20em;
+   height: 75vh;
+   width: 100%;
    padding: 0;
+   margin: 0;
    display: flex;
    justify-content: center;
  }
  section>div{
-   border: solid white;
-   word-wrap:break-word;
    margin-left: 0px;
-   width: 90%;
+   width: 96%;
+   height: 60%;
    padding: 0;
+
  }
  .texto-section>h1{
-   
-   font-size: 3em;
+   width: 100%;
+   word-wrap:break-word;
+   font-size: 3.2em;
  }
+ .texto-section>p{
+   margin-top: 1.5em;
+   font-size: 1.65em;
+   font-weight: 700;
+ }
+ /*Boton verde de section (Ver planes)*/
+ section>div>button{
+   margin-top: 2.0em;
+   width: 100%;
+   padding: 18px 20px;
+   border-radius: 26px;
+ }
+ section>div>small{
+   margin-top: 3.9em;
+   font-size: 0.9em;
+ }
+ /*Cuerpo 2 (article)*/
+ article>h2{
+   font-weight: 750;
+   font-size: 2.4em;
+   padding-left: 0;
+   padding-right: 0;
+ }
+ /**/
+ article .features {
+   display: flex;
+
+}
+
+article .feature {
+   display: flex;
+   width: 100%;
+   flex-wrap: wrap;
+   flex-direction: row;
+}
+
+article .feature .icon {
+   width: 60px;
+   height: 60px;
+
+   background: lightgray;
+   margin: 0 ;
+      margin-bottom: 0;
+   border-radius: 50%;
+}
+
+article .feature h3 {
+
+   height: 1em;
+   font-size: 1.1rem;
+   margin-bottom: 10px;
+}
+article .feature h3,article .feature p{
+   width: 70%;
+}
 
 }
 @media (min-width:769px) and (max-width:1200px){
